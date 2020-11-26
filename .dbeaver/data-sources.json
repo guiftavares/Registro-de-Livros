@@ -1,0 +1,66 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql5-17601cf6124-36a1cd50eee4d968": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "127.0.0.1",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		},
+		"mysql5-17601e5b7ac-78bde8d9970940c0": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "book",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "book",
+				"url": "jdbc:mysql://localhost:3306/book",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000"
+				},
+				"auth-model": "native",
+				"handlers": {
+					"socks_proxy": {
+						"type": "PROXY",
+						"enabled": true,
+						"save-password": true,
+						"properties": {
+							"socks-host": "localhost",
+							"socks-port": 3306
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
