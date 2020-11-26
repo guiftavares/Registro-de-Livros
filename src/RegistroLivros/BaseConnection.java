@@ -9,7 +9,7 @@ public class BaseConnection {
 	String mydatabase = "book";
 	String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
 	String username = "root"; 
-	String password = "Gui_389869"; 
+	String password = "#######"; //Inserir senha
 	Connection connection;
 	
 	BaseConnection() throws SQLException{
